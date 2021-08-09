@@ -1,11 +1,12 @@
 {
   "name": "hello_node_skaff",
   "version": "1.0.0",
+  "type": "commonjs",
   "description": "Quick test app linking together node, express, typescript, kubernetes, and skaffold",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
+    "start": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
   },
   "homepage": "https://github.com/randyL78/hello_node_skaff#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
   }
 }
