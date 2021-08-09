@@ -1,0 +1,32 @@
+{
+  "name": "hello_node_skaff",
+  "version": "1.0.0",
+  "description": "Quick test app linking together node, express, typescript, kubernetes, and skaffold",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randyL78/hello_node_skaff.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "TypeScript",
+    "Docker",
+    "K8s",
+    "Kubernetes",
+    "Skaffold"
+  ],
+  "author": "Randy D Layne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/randyL78/hello_node_skaff/issues"
+  },
+  "homepage": "https://github.com/randyL78/hello_node_skaff#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
