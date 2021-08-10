@@ -1,0 +1,17 @@
+apiVersion: skaffold/v2beta19
+kind: Config
+metadata:
+  name: hello-node-skaff
+build:
+  artifacts:
+  - image: randyl/hello-node-skaff
+    docker:
+      dockerfile: Dockerfile
+    sync:
+      manual:
+        - dest: 'src/**/*.js'
+          src: .
+deploy:
+  kubectl:
+    manifests:
+    - infra/k8s/*
